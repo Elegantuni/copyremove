@@ -1,0 +1,110 @@
+#!/usr/bin/env bash
+
+terminate1=$#
+
+arguments1=$1
+arguments2=$2
+arguments3=$3
+arguments4=$4
+arguments5=$5
+arguments6=$6
+arguments7=$7
+arguments8=$8
+arguments9=$9
+
+if [ "$1" == "-fr" ] || [ "$1" == "-rf" ];
+then
+	for i in $(seq 2 $terminate1)
+	do
+		if [ $i == "2" ];
+		then
+			cp -r $arguments2 ~/.rmsaves/$arguments2-`date | sed 's/ /-/g'`
+			rm -fr $arguments2
+		fi
+		if [ $i == "3" ];
+		then
+			cp -r $arguments3 ~/.rmsaves/$arguments3-`date | sed 's/ /-/g'`
+			rm -fr $arguments3
+		fi
+		if [ $i == "4" ];
+		then
+			cp -r $arguments4 ~/.rmsaves/$arguments4-`date | sed 's/ /-/g'`
+			rm -fr $arguments4
+		fi
+		if [ $i == "5" ];
+		then
+			cp -r $arguments5 ~/.rmsaves/$arguments5-`date | sed 's/ /-/g'`
+			rm -fr $arguments5
+		fi
+		if [ $i == "6" ];
+                then
+                        cp -r $arguments6 ~/.rmsaves/$arguments6-`date | sed 's/ /-/g'`
+			rm -fr $arguments6
+                fi
+		if [ $i == "7" ];
+                then
+                        cp -r $arguments7 ~/.rmsaves/$arguments7-`date | sed 's/ /-/g'`
+                        rm -fr $arguments7
+                fi
+		if [ $i == "8" ];
+                then
+                        cp -r $arguments8 ~/.rmsaves/$arguments8-`date | sed 's/ /-/g'`
+                        rm -fr $arguments8
+                fi
+		if [ $i == "9" ];
+                then
+                        cp -r $arguments9 ~/.rmsaves/$arguments9-`date | sed 's/ /-/g'`
+                        rm -fr $arguments9
+                fi
+	done
+else
+	for i in $(seq 1 $terminate1)
+	do
+		if [ $i == "1" ];
+		then
+			cp -r $arguments1 ~/.rmsaves/$arguments1-`date | sed 's/ /-/g'`
+			rm -fr $arguments1
+		fi
+		if [ $i == "2" ];
+                then
+                        cp -r $arguments2 ~/.rmsaves/$arguments2-`date | sed 's/ /-/g'`
+                        rm -fr $arguments2
+                fi
+                if [ $i == "3" ];
+                then
+                        cp -r $arguments3 ~/.rmsaves/$arguments3-`date | sed 's/ /-/g'`
+                        rm -fr $arguments3
+                fi
+                if [ $i == "4" ];
+                then
+                        cp -r $arguments4 ~/.rmsaves/$arguments4-`date | sed 's/ /-/g'`
+                        rm -fr $arguments4
+                fi
+                if [ $i == "5" ];
+                then
+                        cp -r $arguments5 ~/.rmsaves/$arguments5-`date | sed 's/ /-/g'`
+                        rm -fr $arguments5
+                fi
+                if [ $i == "6" ];
+                then
+                        cp -r $arguments6 ~/.rmsaves/$arguments6-`date | sed 's/ /-/g'`
+                        rm -fr $arguments6
+                fi
+                if [ $i == "7" ];
+                then
+                        cp -r $arguments7 ~/.rmsaves/$arguments7-`date | sed 's/ /-/g'`
+                        rm -fr $arguments7
+                fi
+                if [ $i == "8" ];
+                then
+                        cp -r $arguments8 ~/.rmsaves/$arguments8-`date | sed 's/ /-/g'`
+                        rm -fr $arguments8
+                fi
+                if [ $i == "9" ];
+                then
+                        cp -r $arguments9 ~/.rmsaves/$arguments9-`date | sed 's/ /-/g'`
+                        rm -fr $arguments9
+                fi
+	done
+fi
+
